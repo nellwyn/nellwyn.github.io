@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0150)http://player.ooyala.com/iframe.html#pbid=3669f8fe92fe41e59e196d4bef6f4b69&ec=JzbnJtZzrKT51loDzAThzhixp3CQaFHc&docUrl=http%3A%2F%2Fhellonellwyn.com%2F -->
+<html><script type="text/javascript">(function () {
+      return window.SIG_EXT = {};
+    })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <script>
+      var params = window.location.href;
+      var pbid = params.match(/pbid=([^&]*)/)[1];
+      //for backwards compatibility, adding a check whether the platform param exists
+      //and defaulting to flash-priority (the old hard-coded value) if not 
+      var platformParam = params.match(/platform=([^&]*)/);
+      var platform = (platformParam ? platformParam[1] : "flash-priority");
+      var markup = "<scr" + "ipt src='//player.ooyala.com/v3/"+pbid+"?platform="+platform+"'/></scr" + "ipt>";
+      document.write(markup);
+    </script><script src="3669f8fe92fe41e59e196d4bef6f4b69"></script>
+  <style type="text/css">#playerV3Container>div{width:100%;height:100%;position:relative;z-index:10000;overflow:hidden}#playerV3Container .innerWrapper{background:#000}#playerV3Container .innerWrapper:-webkit-full-screen{width:100%;height:100%}#playerV3Container .innerWrapper:-webkit-full-screen video{width:100%}#playerV3Container .innerWrapper.fullscreen{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff}#playerV3Container .oo_playhead{-ms-touch-action:none}#playerV3Container .oo_error{position:absolute;width:100%;height:100%;cursor:pointer;background:#1a1a1a;background-position:center center;background-size:contain;background-repeat:no-repeat;z-index:10002;}#playerV3Container .oo_error .oo_error_image{position:absolute;width:100%;height:30%;top:20%;background-image:url('data:image/png;base64,');background-position:center;background-size:contain;background-origin:content;background-repeat:no-repeat}#playerV3Container .oo_error .oo_error_message{position:absolute;width:100%;top:70%;text-align:center;}#playerV3Container .oo_error .oo_error_message .oo_error_message_text{color:#d0d0d0;font-size:18px;font-family:Helvetica,sans-serif;font-weight:bold;line-height:100%;text-shadow:1px 3px 4px #000}</style></head>
+  <body>
+    <style>
+      * {
+        margin:0;
+        padding:0;
+      }
+      html,body {
+        height:100%;
+        width:100%;
+      }
+    </style>
+    <div id="playerV3Container" style="width: 100%; height: 100%;"><div class="innerWrapper"><div class="oo_error" style="display: none;"><div class="oo_error_image"></div><div class="oo_error_message"><h1 class="oo_error_message_text"></h1></div></div>         <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="OoFlashj3wqqizr529" class="video" width="100%" height="100%" style="left: 0px;">          <param name="movie" value="http://player.ooyala.com/player.swf?version=2&amp;player=3669f8fe92fe41e59e196d4bef6f4b69&amp;embedType=nuplayer&amp;embedStyle=mjolnir">          <!--[if !IE]>-->          <object type="application/x-shockwave-flash" id="OoFlashj3wqqizr529_internal" data="http://player.ooyala.com/player.swf?version=2&player=3669f8fe92fe41e59e196d4bef6f4b69&embedType=nuplayer&embedStyle=mjolnir" width="100%" height="100%">          <!--<![endif]-->          <param name="allowScriptAccess" value="always">          <param name="allowFullScreen" value="true">          <param name="bgcolor" value="#000000">          <param name="wmode" value="direct">          <param name="flashvars" value="playerBrandingId=3669f8fe92fe41e59e196d4bef6f4b69&amp;embedType=nuplayer&amp;embedStyle=mjolnir&amp;me=OoFlashj3wqqizr529&amp;callback=OO.OoFlashj3wqqizr529&amp;width=100%25&amp;height=100%25&amp;docUrl=http%3A%2F%2Fhellonellwyn.com%2F&amp;flash_version=&amp;v3_version=d77f40e914dabaff91d0956d4a01ee5bec127789&amp;o0jsdebug=">           <p>Please upgrade your browser to view HTML 5 content</p>          <!--[if !IE]>-->          </object>          <!--<![endif]-->         </object>         </div></div>
+    <script>
+      var params = window.location.href;
+      var ec = params.match(/ec=([^&]*)/)[1];
+      // Options can be passed along to the options hash for Player.create using the form
+      // &options[< zero or many hashes>.key]=value
+      // ie: &options[ad-manager.ad-id]=123 -> Player.create(id, ec, {ad-manager:{ad-id:123}})
+      // You can also pass in top-level parameters (options[key]=value) or arbitrarily deep parameters
+      // (options[hash.hash.hash.hash.hash.key]=value) and define as many options as URL length 
+      // restraints will allow (&options[autoplay]=true&options[ad-manager.pre-roll]=true)
+      var playerParams = {};
+      var queryTokens = params.split(/[\?\&]/);
+      for (var i=0; i<queryTokens.length; i++) {
+        try {
+          var match = queryTokens[i].match(/^options\[([^\]]+)\]=(.+)/);
+          if (match) {
+            var currentLevel = playerParams;
+            var keySplits = match[1].split(".");
+            while (keySplits.length > 1) {
+              var key = keySplits.shift();
+              if (currentLevel[key] === undefined)
+                currentLevel[key] = {};
+              currentLevel = currentLevel[key];
+            }
+            if (typeof currentLevel === 'string')
+              throw("Ooyala Exception: Invalid query parameter");
+            currentLevel[keySplits[0]] = match[2];
+          }
+        }
+        catch (e) {
+          //Tell them it's an error coming from us and not some native-looking exception
+          throw("Ooyala Exception: Invalid query parameter");
+        }
+      }
+      var docUrl = undefined;
+      if(!!params.match(/docUrl=([^&]*)/)) {
+        docUrl = params.match(/docUrl=([^&]*)/)[1];
+      }
+      if(!!docUrl) {
+        playerParams["docUrl"] = decodeURIComponent(docUrl);
+        if (playerParams["flashParams"] === undefined)
+          playerParams["flashParams"] = {};
+        playerParams["flashParams"]["docUrl"] = decodeURIComponent(docUrl);
+      }
+
+      var markup = "<scr" + "ipt type='text/javascript' charset='utf-8'>";
+      var options = "";
+      markup += "OO.ready(function(){" + "OO.Player.create('playerV3Container', '"+ec+"', " +
+        JSON.stringify(playerParams) + ");" + " });";
+      markup += "</scr" + "ipt>";
+      document.write(markup);
+    </script><script type="text/javascript" charset="utf-8">OO.ready(function(){OO.Player.create('playerV3Container', 'JzbnJtZzrKT51loDzAThzhixp3CQaFHc', {"docUrl":"http://hellonellwyn.com/","flashParams":{"docUrl":"http://hellonellwyn.com/"}}); });</script>
+  
+
+
+<iframe src="ooyala_storage.html" style="display: none;"></iframe></body></html>

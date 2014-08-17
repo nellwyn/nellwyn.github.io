@@ -1,0 +1,8 @@
+/* ProximaNova-Light webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+         url('ProximaNova-Light.woff') format('woff'),
+         url('ProximaNova-Light.ttf')  format('truetype'),
+         url('ProximaNova-Light.svg#webfont') format('svg');
+}
