@@ -1,0 +1,50 @@
+/*
+ * Globals
+ */
+
+a,
+a:focus,
+a:hover {
+  color: #BD2031;
+}
+
+h1 {
+  color: #561420;
+  font-size: 200px;
+}
+
+ul {
+  margin: 20px 0;
+  font-size: 18px;
+  list-style: none;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  background-image: url("../img/map.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+}
+
+.content {
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.90);
+  margin: 20px;
+  padding: 10px 40px;
+}
+
+p.lead {
+  font-size: 18px;
+}
