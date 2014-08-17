@@ -13,12 +13,6 @@ h1 {
   font-size: 200px;
 }
 
-ul {
-  margin: 20px 0;
-  font-size: 18px;
-  list-style: none;
-}
-
 /*
  * Base structure
  */
@@ -47,4 +41,41 @@ body {
 
 p.lead {
   font-size: 18px;
+}
+
+ul.services {
+  margin: 20px 0;
+  font-size: 18px;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.services li img {
+  background: url("../img/services_sprite.png") no-repeat top left;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+ul.services li img.etsy {
+  background-position: -176px -288px;
+  width: 16px;
+  height: 16px;
+}
+
+ul.services li img.linkedin {
+  background-position: -272px -96px;
+  width: 16px;
+  height: 16px;
+}
+
+ul.services li img.twitter {
+  background-position: -80px 0;
+  width: 16px;
+  height: 16px;
+}
+
+ul.services li img.tumblr {
+  background-position: -272px 0;
+  width: 16px;
+  height: 16px;
 }
